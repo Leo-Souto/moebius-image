@@ -56,8 +56,8 @@ G=double(image(:,:,2));
 B=double(image(:,:,3));
 [nr nc]=size(R);
 % Define portion of the final image
-x = linspace(-2*pi,2*pi,nc);
-y = linspace(-pi,pi,nr);
+x = linspace(-pi,pi,nc);
+y = linspace(-pi/2,pi/2,nr);
 [X,Y]=meshgrid(x,y);
 %Define the domain
 aa = linspace(-pi,pi,nc);
